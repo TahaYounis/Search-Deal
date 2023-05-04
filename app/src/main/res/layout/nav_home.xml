@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        tools:context=".Nav_Home">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:background="@color/black">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="12dp"
+                android:layout_weight="3"
+                android:fontFamily="@font/arabic1"
+                android:gravity="center|right"
+                android:text="اســم التطبيق"
+                android:textColor="@color/white"
+                android:textSize="26dp" />
+
+            <ImageView
+                android:id="@+id/btn_log_out"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_log_out"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear" />
+
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+            android:id="@+id/bottomNavigation_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:mbn_backgroundBottomColor="@color/black"
+            app:mbn_circleColor="#FFF"
+            app:mbn_countBackgroundColor="@color/teal_200"
+            app:mbn_countTextColor="#FFF"
+            app:mbn_defaultIconColor="#fff"
+            app:mbn_selectedIconColor="@color/black" />
+
+    </RelativeLayout>
+</layout>

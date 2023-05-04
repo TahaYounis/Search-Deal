@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "873256312376",
+    "project_id": "search-and-deal",
+    "storage_bucket": "search-and-deal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873256312376:android:0a63c9a4f6389f8d4c50cd",
+        "android_client_info": {
+          "package_name": "com.app.searchdeal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873256312376-hqsboo6ev3mkg45504rlr1q52mbl03en.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.searchdeal",
+            "certificate_hash": "ca1f10afaeb9f36a134718f77ff5316a57560fd6"
+          }
+        },
+        {
+          "client_id": "873256312376-cdov3mio47b98erukim8de6c8lj305tk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdSObMDW8B0bNJMDKcqvht4_qjGT3BlmA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873256312376-cdov3mio47b98erukim8de6c8lj305tk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

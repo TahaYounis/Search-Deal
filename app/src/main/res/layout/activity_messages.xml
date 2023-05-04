@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MessagesActivity"
+        android:layoutDirection="rtl">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:background="@color/black">
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="12dp"
+                android:layout_weight="6"
+                android:fontFamily="@font/arabic1"
+                android:gravity="center|left"
+                android:text="اســم الشخص"
+                android:textColor="@color/white"
+                android:textSize="26dp" />
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_arrow"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear"
+            android:background="#DEDCDC"
+            android:layout_above="@id/relative"
+            android:layoutDirection="ltr"/>
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:background="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="true"
+            android:layoutDirection="ltr">
+            
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_et"
+                android:background="@android:color/transparent"
+                android:hint="Type a message..."
+                android:layout_toLeftOf="@+id/btn_send"
+                android:layout_centerVertical="true"
+                android:textSize="26dp"/>
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btn_send"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_send"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>
