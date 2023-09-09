@@ -1,7 +1,8 @@
 # Search-Deal
 Search for clients on the Google map, communicate with them via chat to deal with them.
 
-– Google Map   – Firebase Auth   – Firebase Realtime for chat and system database   –  Navigation component
+### Technologies
+Google Map   – Firebase Auth   – Firebase Realtime for chat and system database   –  Navigation component
 
 https://github.com/TahaYounis/Search-Deal/assets/82248336/10ef39fb-f801-4b3c-932f-f189a2e07c64
 
